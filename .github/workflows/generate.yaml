@@ -22,7 +22,7 @@ jobs:
           poetry install
       
       - name: Generate
-        run: poetry run gen-pypi --input-dir inputs/ --output-dir output/
+        run: poetry run gen-pypi --input-dir input/ --output-dir output/
         
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
