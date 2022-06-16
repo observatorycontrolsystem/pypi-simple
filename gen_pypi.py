@@ -85,7 +85,7 @@ def render_pkg_artifacts_index(
         href = urlparse(a.href)
 
         if a.sha256:
-            href = href._replace(fragment=f"sha256:{a.sha256}")
+            href = href._replace(fragment=f"sha256={a.sha256}")
 
         if a.requires_python:
             python = html.escape(a.requires_python)
